@@ -1,0 +1,17 @@
+You get the same results whether you prefix these functions with window or not.
+
+So, why don't you have to type window.alert("hey"); instead of alert("hey"); every time? Because window is the default object, so JavaScript assumes window if you don't type it. That then begs the question, why do we write window.onload = init;, when we could just write onload = init;? The reason is that while there's usually only one alert function, there could be many onload properties being set in your code. So it's best to be absolutely clear, and specify window.onload so there's no ambiguity about what you mean. This will create fewer bugs and make your code easier to read.
+
+We'll come back to the window object again later; for now, it's just important that you know it's another important object in JavaScript, like document, and that it is the "default object" that has properties and methods you'll use often when writing JavaScript programs.
+
+Another action-packed lesson! In this lesson you've learned:
+
+The browser represents pages internally using the Document Object Model, which we often visualize as an upside-down tree.
+The Document Object Model (DOM) contains all the elements and content of your page as objects.
+You can access these objects using document.getElementById() and document.getElementsByTagName().
+document.getElementById() returns one element, the element with the id you specify.
+document.getElementsByTagName() returns a collection of elements that match the tag name you specify. Even if only one (or no) elements match, you'll get an array back.
+You can loop through the collection of elements returned by document.getElementsByTagName() just like you would loop through an array of items.
+It's important not to access the objects in the DOM until the page has completely loaded.
+The window object is another important object you'll use in your JavaScript programs.
+The window object is the "default object" for your JavaScript programs.

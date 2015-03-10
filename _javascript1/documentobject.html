@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Object Properties</title>
+</head>
+<body>
+<div id="result"></div>
+<script type="text/javascript">
+  window.onload = init;
+  function init(){
+    var div = document.getElementById("result");
+    div.innerHTML =
+      "The domain where this document lives is: " + document.domain + "<br>" +
+      "The title of the document is: " + document.title + "<br>" +
+      "The URL of the document is: " + document.URL;
+  }
+</script>
+</body>
+</html>

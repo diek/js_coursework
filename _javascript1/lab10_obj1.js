@@ -43,3 +43,30 @@ function init(){
   //display text
   div.innerHTML = movieInfo;
 }
+
+// John's suggestion
+// Right. You also could have used a constructor function to make the movie objects
+
+ function Movie(title, year, genre, rating, showtimes) {
+
+ this.title = title;
+
+ this.year = year;
+
+ this.genre = genre;
+
+ this.rating = rating;
+
+ this.showtimes = showtimes;
+
+ }
+
+ var movies = new Array();
+
+ movies[0] = new Movie("Plan 9 from Outer Space", 1959, "SciFi", 1, ["3:00pm", "11:55pm"]);
+
+ movies[1] = new Movie("Casablanca", 1942, "Drama", 5, ["5:00pm", "9:00pm"]);
+
+ movies[2] = new Movie("Blazing Saddles", 1974, "Comedy", 4, ["7:00pm"]);
+
+// We will look for the use of constructor functions in future objectives.

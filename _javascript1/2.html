@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Test - Reading data in JSON format</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function read_json() {
+            $.getJSON("2.json", function(data) {
+                alert("My data: " + data["mydata"]);
+                $.each(data["prime"], function(idx,prime) {
+                    alert("Prime number: " + prime);
+                });
+            });
+        }
+    </script>
+</head>
+<body onload="read_json();">
+</body>
+</html>

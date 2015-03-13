@@ -18,6 +18,7 @@ function Pet(type, name, weight, likes, sound){
 
 function init(){
   var willie = new Pet("dog", "Willie", 45, ["slobbering", "panting", "eating"], "Woof!");
+  var annie = new Pet("cat", "Annie", 6, ["sleeping", "teasing pickles"], "Meow");
 
   var div = document.getElementById("pets");
   div.innerHTML = willie.name + " says " + willie.speak(3);

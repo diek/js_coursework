@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Favorite Movies Redux</title>
+  </head>
+  <body>
+    <h1>Movie List Builder</h1>
+    <form id="theForm">
+      <label for="title">Movie Title:</label>
+        <input id="title" name="title" type="text" size="30" required><br>
+      <label for"rating">Rating:</label>
+        1 <input id="rating" name="rating" type="range" max="5" min="1">5<br>
+      <label for="genre">Genre:</label>
+        <select id="genre" name="genre">
+          <option value="drama" selected>Drama</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="scifi">Sci Fi</option>
+          <option value="thriller">Thriller</option>
+        </select><br><br>
+      <label for"description">Description</label>
+        <textarea id="description" name="description"></textarea>
+      <br><br>
+      <input type="button" id="submitButton" value="Add Movie!"><br>
+    </form>
+    <ul id="movieList"></ul>
+    <script src="movies_redux.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personality Quiz</title>
+</head>
+<body>
+  <h1>Personality Quiz</h1>
+  <form id="theForm" method="get" action="http://yourserver.com/yourscript.php">
+    <label for="color">Color</label>
+    <input type="text" id="color" placeholder="blue" required>
+    </p>
+    <p>Are you...</p>
+    <input type="checkbox" id="funny" name="personality" value="funny">
+    <label for="funny">Funny</label>
+    <input type="checkbox" id="smart" name="personality" value="smart">
+    <label for="smart">Smart</label>
+    <input type="checkbox" id="shy" name="personality" value="shy">
+    <label for="shy">Shy</label>
+    <input type="checkbox" id="outgoing" name="personality" value="outgoing">
+    <label for="outgoing">Outgoing</label>
+    <br>
+    <p>Tell us about yourself:</p>
+    <textarea id="aboutme" name="textarea" rows="12" cols="42"></textarea>
+    <br>
+    <label for="date">What is your birthday?</label>
+    <input id="date" name="dob" type="date">
+    <input id="submitButton" type="button" value="Submit">
+  </form>
+  <h2>Results</h2>
+  <div id="results"></div>
+  <script src="personality.js"></script>
+</body>
+</html>

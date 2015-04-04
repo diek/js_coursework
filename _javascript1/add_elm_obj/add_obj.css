@@ -1,0 +1,51 @@
+html,
+body {
+  font: 105% verdana, sans-serif;
+  color: #555753;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+p {
+  font-style: italic;
+  margin-top: 0;
+  text-align: justify;
+ }
+
+.button-add {
+  background: #A6C6EE;
+  padding: 8px 13px;
+  color: #4A545C;
+  font-family: verdana, sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+#header {
+  padding:10px;
+  background-color:#4A545C;
+  color:#A6C6EE;
+  text-align:center;
+}
+#content {
+  padding:10px;
+  padding-bottom:80px;   /* Height of the footer element */
+}
+#footer {
+  width:100%;
+  height:80px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background-color:#4A545C;
+  color:#A6C6EE;
+  clear:both;
+  text-align:center;
+}

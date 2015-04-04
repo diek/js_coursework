@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+  function Pet(type, name, weight, likes) {
+      this.type = type;
+      this.name = name;
+      this.weight = weight;
+      this.likes = likes;
+  }
+  var colorScheme = JSON.parse('{"springColors":["AF7575","EFD8A1","BCD693","AFD7DB","3D9CA8"], "earthColors":["332525","907465","EDC5B5","878C6D","63674A"]}');
+  console.log(colorScheme)
+
+  var pickles = new Pet("cat", "Pickles", 7, ["sleeping", "purring", "eating butter"]);
+  var picklesJSON = JSON.stringify(pickles);
+  console.log(picklesJSON);
+
+  var anotherPickles = JSON.parse(picklesJSON);
+  console.log(anotherPickles);
+
+</script>
+</body>
+</html>

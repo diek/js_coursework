@@ -1,0 +1,8 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+div.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}

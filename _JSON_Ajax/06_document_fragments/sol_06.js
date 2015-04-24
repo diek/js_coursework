@@ -80,6 +80,7 @@ function createNewTodo(todoItem) {
     spanDone.setAttribute("class", "done");
     spanDone.innerHTML = "&nbsp;&#10004;&nbsp;";
   }
+
   li.appendChild(spanDone);
   li.appendChild(spanTodo);
   return li;
@@ -87,13 +88,13 @@ function createNewTodo(todoItem) {
 
 function getFormData() {
   var task = document.getElementById("task").value;
-  if (checkInputText(task, "Please enter a task.")) return;
+  if (checkInputText(task, "Please enter a task")) return;
 
   var who = document.getElementById("who").value;
-  if (checkInputText(who, "Please enter a person to complete the task.")) return;
+  if (checkInputText(who, "Please enter a person to complete the task")) return;
 
   var date = document.getElementById("dueDate").value;
-  if (checkInputText(date, "Please enter a due date.")) return;
+  if (checkInputText(date, "Please enter a due date")) return;
 
   var todoItem = new Todo(task, who, date);
   todos.push(todoItem);
@@ -115,6 +116,6 @@ function saveTodoData() {
   var URL = "todo_06.php?data=" + encodeURI(todoJSON);
   request.open("GET", URL);
   request.setRequestHeader("Content-Type",
-                            "text/plain;charset=UTF-8");
+                           "text/plain;charset=UTF-8");
   request.send();
 }

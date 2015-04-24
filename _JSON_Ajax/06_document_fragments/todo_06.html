@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <script src="todo_06.js"></script>
+    <link rel="stylesheet" href="todo_06.css">
+  </head>
+  <body>
+  <h1>My To-Do List</h1>
+  <ul id="todoList"></ul>
+  <form>
+  <fieldset>
+    <legend>Add a new to-do item</legend>
+    <div class="tableContainer">
+      <div class="tableRow"> <!-- task -->
+        <label for="task">Task:</label>
+          <input type="text" id="task" size="35" placeholder="Get milk">
+      </div>
+      <div class="tableRow"> <!-- who -->
+        <label for="task">Who:</label>
+          <input type="text" id="who" placeholder="Derrick">
+      </div>
+      <div class="tableRow"> <!-- due date -->
+      <label for="dueDate"> Due Date:</label>
+        <input type="date" id="dueDate">
+      </div>
+      <div class="tableRow"> <!-- submit -->
+        <label for="submit"></label>
+        <input type="button"  id="submit" value="submit">
+      </div>
+    </div>
+  </fieldset>
+  </form>
+  </body>
+</html>

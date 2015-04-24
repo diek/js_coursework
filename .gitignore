@@ -1,10 +1,12 @@
 # Mac Bullshit
-.DS_Store
+*.DS_Store
+*.pyc
+env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
 
 _assignments/
 lessons/
+json_server/
 *.pdf

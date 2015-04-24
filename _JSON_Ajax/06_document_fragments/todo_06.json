@@ -1,0 +1,38 @@
+[
+  {
+    "task": "Make blueberry pancakes, with maple syrup",
+    "who": "Natasha",
+    "dueDate": "2015-05-19",
+    "done": false
+  },
+  {
+    "task": "Make fish cakes for Natasha",
+    "who": "Derrick",
+    "dueDate": "2015-04-21",
+    "done": false
+  },
+  {
+    "task": "Get pork",
+    "who": "Derrick",
+    "dueDate": "2015-04-22",
+    "done": false
+  },
+  {
+    "task": "Give Natasha a shopping list",
+    "who": "Derrick",
+    "dueDate": "2015-04-30",
+    "done": false
+  },
+  {
+    "task": "fix mistakes and pass in assignment,",
+    "who": "derrick",
+    "dueDate": "2015-04-20",
+    "done": false
+  },
+  {
+    "task": "Make compound if/else",
+    "who": "derrick",
+    "dueDate": "2015-04-20",
+    "done": false
+  }
+]

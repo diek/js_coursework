@@ -19,7 +19,7 @@ function generate_table() {
   var body = document.getElementsByTagName("body")[0];
 
   // creates a <table> element and a <tbody> element
-  var tbl     = document.createElement("table");
+  var tbl = document.createElement("table");
   var tblBody = document.createElement("tbody");
 
   // creating all cells

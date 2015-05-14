@@ -1,12 +1,11 @@
 window.onload = init;
 
 var myNumbers = {};
-var colorId = 0;
+var colorId = 1;
 
 function init() {
-  localStorage.removeItem('testObject');
-  getExistingValues()
-  displayColors();
+  // localStorage.removeItem('colorChoices');
+  getExistingValues();
   var submitButton = document.getElementById("submit");
   submitButton.onclick = getFormData;
 }
@@ -15,25 +14,30 @@ function getExistingValues() {
     if (localStorage) {
         for (var i = 0; i < localStorage.length; i++) {
             var key = localStorage.key(i);
-            if (key == "testObject") {
-              var retrievedObject = localStorage.getItem('testObject');
+            if (key == "colorChoices") {
+              var retrievedObject = localStorage.getItem('colorChoices');
               myNumbers = JSON.parse(retrievedObject);
+              for (var key in myNumbers) {
+                color = myNumbers[key];
+                displayColors(color);
+                colorId++;
+              }
             }
         }
     }
     else {
-        console.log("Error: you don't have localStorage!");
+      console.log("Error: you don't have localStorage!");
     }
 }
 
 function getFormData() {
-  getExistingValues()
   var flag = false;
   var input = document.getElementsByTagName('input')
   for (i = 0; i < input.length; i++) {
     if (input[i].type == 'text' && input[i].value) {
       flag = true
       addDataPair(colorId, input[i].value);
+      displayColors(input[i].value)
       colorId++;
     }
   }
@@ -41,24 +45,17 @@ function getFormData() {
     alert("Please enter a color");
     return;
   }
-  displayColors()
-  myNumbers = {};
   document.forms[0].reset();
 }
 
 function addDataPair(key, value){
   myNumbers[key] = value;
-  localStorage.setItem('testObject', JSON.stringify(myNumbers));
+  localStorage.setItem('colorChoices', JSON.stringify(myNumbers));
 }
 
-function displayColors(){
-  for (var key in myNumbers) {
-    var value = myNumbers[key];
+function displayColors(color){
     var ul = document.getElementById("items");
     var li = document.createElement("li");
-    li.innerHTML = value;
+    li.innerHTML = color;
     ul.appendChild(li);
-  }
 }
-
-
